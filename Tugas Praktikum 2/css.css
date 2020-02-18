@@ -9,7 +9,11 @@
     font-family: Comic Sans Ms, Times, serif;
     line-height: 1.4em;
     margin: 0px;}
-  
+  #header-wrapper{ 
+background image: url(Untitled-3.png);
+background-repeat: no-repeat;
+background-color: #00000;
+width:975px;margin:0 auto 0;height:125px;)
 }
   header {
     height: 100px;
