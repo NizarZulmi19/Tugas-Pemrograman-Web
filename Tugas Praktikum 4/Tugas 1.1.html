@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta charset="8">
+<script type="text/javascript "src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		
+		$("#tombol_sembunyi").click(function(){
+		$("#box").fadeOut();
+		
+	})
+		$("#tombol_tampil").click(function(){
+		$("#box").show();
+	})
+		$("#tombol_sembunyi2").click(function(){
+		$("#kotak").fadeOut();
+	})
+		$("#tombol_tampil2").click(function(){
+		$("#kotak").show();
+	})
+		$("#tombol_sembunyi3").click(function(){
+		$("#kotaks").fadeOut();
+	})
+		$("#tombol_tampil3").click(function(){
+		$("#kotaks").show();
+	})
+});
+
+</script>
+<style type="text/css">
+#box{
+	width:900px;
+	height: 600px;
+	background-image: url(Upn.png);
+	border:2px solid black;
+	background-attachment: fixed;
+}
+#kotak{
+	width:900px;
+	height: 600px;
+	background-image: url(minimalism_aircraft_flight_74406_1920x1080.jpg);
+	border:2px solid black;
+	background-attachment: fixed;
+}
+#kotaks{
+	width:900px;
+	height: 600px;
+	background-image: url(kisspng-indonesian-map-flag-of-indonesia-asean-map-5b3eeb5a22b506.5666649015308501381422.png);
+	border:2px solid black;
+	background-attachment: cover;	
+}
+</style>
+</head>
+<body>
+<h2>Tugas Show dan Hide jQuery</h2>
+<button id="tombol_sembunyi">Sembunyikan</button>
+<button id="tombol_tampil">Tampilkan</button>
+<div id="box"></div>
+<br><br>
+
+<button id="tombol_sembunyi2">Sembunyikan 2</button>
+<button id="tombol_tampil2"> Tampilkan 2</button>
+<div id="kotak"></div>
+<br><br>
+
+<button id="tombol_sembunyi3"> Sembunyikan 3</button>
+<button id="tombol_tampil3">Tampilkan 3</button>
+<div id="kotaks"></div>
+</body>
+
+</html>
