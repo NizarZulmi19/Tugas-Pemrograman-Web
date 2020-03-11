@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalkulator</title>
+	
+</head>
+<style type="text/css">
+body {background-image: url(minimalism_aircraft_flight_74406_1920x1080.jpg);
+		background-size: cover;
+		background-attachment: fixed;}
+		#boxmodel {
+                background: #CDE;
+                border: 25px solid #ABC;
+                height: 100px;
+                margin: 25px;
+                padding: 25px;
+                width: 300px;
+            }
+.background {
+  background-color: #4CAF50; /* Hijau */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+</style>
+<body>
+	<script language="javascript"> 
+		
+    function tambah()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a+b
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value = c
+    }
+
+    function kurang()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a-b
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value=c
+    }
+
+    function kali()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a*b
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value=c
+    }
+
+    function bagi()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a/b
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value = c
+    }
+
+    function persen()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a%b
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value = c
+    }
+
+    function pangkat()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=Math.pow(a, b)
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value = c
+    }
+
+    </script>
+
+<div class="top">
+<form name="form">
+	<header>
+		<center><h1 class="judul"><font color="white">Kalkulator</h1>
+		<p class="deskripsi"><font color="white">Silahkan masukkan angka</p>
+	</header></center>
+	
+	<center><div class="background" align="">
+		<table width="496.6" height="96.8" align="center" class="gayatabel"></center>
+			<tr> 
+				<td><p><font color="white">Angka Pertama</p><input type="text" name="angka1" size="20" ></td></font>
+				<td><p><font color="white">Angka Kedua</p><input type="text" name="angka2" size="20"></td>
+				<td><p><font color="white">Hasil</p><input type="text" name="hasil" ></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center" height="75px">
+				<input type="button" value="  +  " onClick="tambah()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  -  " onClick="kurang()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  x  " onClick="kali()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  /  " onClick="bagi()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  %  " onClick="persen()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  ^  " onClick="pangkat()" style="height:30px; width:50px; font-size:12pt;">
+					
+				</td>
+			</tr>
+		</table>
+	</div>
+		</form>
+	</body>
+</html>
