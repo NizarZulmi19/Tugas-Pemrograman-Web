@@ -104,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		} else{ 
 			$nisn = cek_input($_POST["nisn"]);
 			if (!is_numeric($nisn)){
-				$error_nisn = "NISN boleh angka";
+				$error_nisn = "NISN hanya boleh angka";
 			}
 		}
 		
@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		} else{ 
 			$nik = cek_input($_POST["nik"]);
 			if (!is_numeric($nik)){
-				$error_nik = "Format email valid";
+				$error_nik = "NIK Hanya Boleh Angka";
 			}
 		}
 		
