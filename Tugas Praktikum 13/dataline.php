@@ -6,7 +6,7 @@ if (!$con) {
 }
 
 
-// Data for Sugar
+
 $query = mysqli_query($con,"SELECT total_cases FROM statistikcovid");
 $rows = array();
 $rows['name'] = 'Total Kasus';
@@ -14,7 +14,7 @@ while($tmp= mysqli_fetch_array($query)) {
     $rows['data'][] = $tmp['total_cases'];
 }
 
-// Data for Rice
+
 $query = mysqli_query($con,"SELECT new_cases FROM statistikcovid");
 $rows1 = array();
 $rows1['name'] = 'Kasus Baru';
@@ -22,7 +22,7 @@ while($tmp = mysqli_fetch_array($query)) {
     $rows1['data'][] = $tmp['new_cases'];
 }
 
-// Data for Wheat Flour
+
 $query = mysqli_query($con,"SELECT total_deaths FROM statistikcovid");
 $rows2 = array();
 $rows2['name'] = 'Total Meninggal';
